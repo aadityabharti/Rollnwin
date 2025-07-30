@@ -1,0 +1,193 @@
+/* Google Font for a modern look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+body {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+
+  /* Multi-color animated gradient background */
+  background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #84fab0, #8fd3f4);
+  background-size: 1800% 1800%;
+  animation: gradientBG 25s ease infinite;
+}
+
+/* Animate the gradient slowly */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  padding: 30px;
+}
+
+h1 {
+  color: #4ECCA3;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 3.8rem;
+  margin-bottom: 40px;
+  text-shadow: 3px 3px 12px rgba(0,0,0,0.35);
+  font-weight: 800;
+  letter-spacing: 2px;
+  
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap; /* keep them side by side always */
+  overflow-x: auto;  /* allow horizontal scroll on very small screens */
+  padding: 10px;
+}
+
+
+
+.player-box {
+  background: linear-gradient(135deg, #f1b1b1, #61a2c2, #daf4d4);
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  width: 240px;
+  transition: transform 0.3s;
+}
+
+.player-box:hover {
+  transform: scale(1.08);
+}
+
+.player-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button img {
+  width: 110px;
+  height: 110px;
+  transition: transform 0.2s;
+}
+
+button img:hover {
+  transform: scale(1.15);
+}
+
+/* Fancy gradient score boxes */
+.score-box {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 100%);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Player-specific colorful borders */
+#score-box1 {
+  border: 3px solid #6EE7B7; /* greenish */
+  background: linear-gradient(135deg, #b9fbc0, #a3f7bf, #ffffff);
+}
+
+#score-box2 {
+  border: 3px solid #FCA5A5; /* reddish/orange */
+  background: linear-gradient(135deg, #fcb69f, #ffecd2, #ffffff);
+}
+
+.score-box h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.score-box p {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 10px 0 0;
+  color: #222;
+}
+
+/* Reset button with bright gradient */
+.reset-btn {
+  margin-top: 40px;
+  padding: 14px 32px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.reset-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+ footer {
+  
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  color: #444;
+  margin-bottom: 2px;
+  
+ }
+
+#game-title {
+  font-size: 3.8rem;
+  margin-bottom: 10px;
+  color:  #0B2447; /* deep navy */
+  text-shadow: 3px 3px 12px rgba(255,255,255,0.4);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+
+#status {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 35px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 600px) {
+  .player-box {
+    width: 180px;
+    padding: 15px;
+    flex: 0 0 auto; /* ensures no squishing */
+  }
+
+  button img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .player-title {
+    font-size: 1.4rem;
+  }
+
+  .score-box p {
+    font-size: 1.6rem;
+  }
+
+  #game-title {
+    font-size: 2rem;
+  }
+
+  #status {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <h1 id="game-title">Welcome to Roll 'n' Win</h1>
+    <br>  
+<h2 id="status">Click the dice to start!</h2>
+
+    <div class="players">
+      <!-- Player 1 -->
+      <div class="player-box">
+        <p class="player-title">Player 1</p>
+        <button id="roll1">
+          <img class="img1" src="images/dice6.png" />
+        </button>
+        <div class="score-box" id="score-box1">
+          <h2>Score</h2>
+          <p id="score1">0</p>
+        </div>
+      </div>
+
+      <!-- Player 2 -->
+      <div class="player-box">
+        <p class="player-title">Player 2</p>
+        <button id="roll2">
+          <img class="img2" src="images/dice6.png" />
+        </button>
+        <div class="score-box" id="score-box2">
+          <h2>Score</h2>
+          <p id="score2">0</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reset button -->
+    <button id="reset" class="reset-btn">Reset Game</button>
+  </div>
+
+ <footer>Developed 🎲 By 🎲 Aditya Bharti!</footer>
+
+ <!--confetti library added below -->
+ <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script> 
+ <script src="script.js"></script>
+</body>
+</html>
